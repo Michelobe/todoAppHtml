@@ -6,7 +6,7 @@ $darkBlue: #4453A6;
 $lightBlue: #2ABBEF;
 $orange: #EDCA42;
 $gray: #D4D4D4;
-$blueGray: #B8C6D9;
+$purple: rgb(190, 146, 211);
 
 *, h1, h2, h3, h4, h5, h6, p, span, div{
   box-sizing: border-box;
@@ -27,18 +27,85 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.welcomeBox{
-  background: rgba(0, 0, 0, .4);
-  padding: 40px 15px;
-  text-align: center;
-  h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 100;
-    text-transform: uppercase;
+  .welcomeBox{
+    background: rgba(0, 0, 0, .4);
+    padding: 40px 15px;
+    text-align: center;
+    h1{
+      font-family: 'Roboto', sans-serif;
+      font-size: 28px;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
   }
 }
+
+
+
+#allTasks{
+  background: url("https://www.roadaffair.com/wp-content/uploads/2017/12/bali-indonesia-shutterstock_631736717.jpg") center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  // height: 300px;
+  background-size: cover;
+  .header{
+    background: rgba(68,83,166,.7);
+    padding: 50px 15px;
+    text-align: right;
+    .logo{
+      font-family: 'Megrim', cursive;
+      font-size: 36px;
+      float: left;
+    }
+    .taskTotal{
+      position: relative;
+      top: -20px;
+      .task{
+        display: inline-block;
+        margin: 0 5px 0 0;
+        .number{
+          color: $purple;
+          font-weight: 100;
+          font-size: 60px;
+          margin: 0 3px 0 0;
+          position: relative;
+          top: 15px;
+        }
+      }
+    }
+    .addCircle{
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      right: 25;
+      top: 200px;
+      padding: 10px;
+      .fas{
+        color: $lightBlue;
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn{
   width: 100%;
   padding: 10px 20px;
