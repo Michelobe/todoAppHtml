@@ -63,9 +63,26 @@
       </section>
 
       <section class = "taskForm">
+        <div class = "closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
         <form>
-          <label>Add Title</label>
-          <input type = "text" />
+          <h3>Add a task</h3>
+          <div class = "formGroup">
+              <label for = "title">Title:</label>
+              <input type = "text" name = "title" />
+          </div>
+          <div class = "formGroup">
+              <label for = "title">Category:</label>
+              <input type = "text" name = "title" />
+          </div>
+          <div class = "formGroup">
+              <label for = "title">Notes:</label>
+              <textarea name = "notes"></textarea>
+          </div>
+          <div class = "formGroup">
+            <button type = "submit">Add new task</button>
+          </div>
         </form>
       </section>
     </div>
@@ -74,12 +91,17 @@
     src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
-    <script>
+    <script type = "text/javascript">
       $(document).ready(function(){
         $('.addCircle').on('click', function(){
-          console.log('show me the popup')
-        })
-      })
+          $('.taskForm').addClass('active');
+        });
+      });
+      $(document).ready(function(){
+        $('.closeBtn').on('click', function(){
+          $('.taskForm').removeClass('active');
+        });
+      });
     </script>
   </body>
 

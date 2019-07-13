@@ -1,6 +1,13 @@
 
+@import "reset";
+@import "variables";
+
+html{
+  overflow: hidden;
+}
 
 #allTasks{
+  overflow-x: hidden;
   .header{
     background: url("https://www.roadaffair.com/wp-content/uploads/2017/12/bali-indonesia-shutterstock_631736717.jpg") center center;
     background-repeat: no-repeat;
@@ -41,6 +48,7 @@
       right: 25px;
       top: 131px;
       padding: 10px;
+      cursor: pointer;
       .fas{
         color: #2ABBEF;
         font-size: 37px;
@@ -81,12 +89,78 @@
       }
     }
   }
+  transition-timing-function: ease-in-out;
   .taskForm{
     background: $darkBlue;
     position: absolute;
     z-index: 100;
     top: 0;
     bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 50px 0;
+    transform: translate(0, 100%);
+    transition: all .6s ease-in-out;
+    &.active{
+      transform: translate(0, 0);
+    }
+    .closeBtn{
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      padding: 15px;
+      cursor: pointer;
+      .fas{
+        font-size: 36px;
+      }
+    }
+    form{
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    h3{
+      margin: 50px 0;
+      font-size: 36px;
+      text-align: center;
+    }
+    .formGroup{
+      margin-bottom: 20px;
+    }
+    label{
+      font-family: 'Roboto', cursive;
+      font-weight: 300;
+      font-size: 24px;
+      display: block;
+      text-transform: capitalize;
+      margin: 0 0 15px 0;
+    }
+    input[type="text"], textarea{
+      width: 100%;
+      background: rgba(255,255,255, .1);
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255, .7);
+      font-weight: 300;
+      font-size: 36px;
+      color: white;
+      &:focus{
+        border:none;
+        outline: none;
+      }
+    }
+    textarea{
+      height: 250px;
+    }
+    button{
+      background: $lightBlue;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $white;
+      padding: 15px 20px;
+    }
   }
 }
   

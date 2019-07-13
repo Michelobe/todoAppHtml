@@ -2,13 +2,8 @@
 @import "reset";
 @import "home";
 @import "allTasks";
+@import "variables";
 
-$white: #fff;
-$darkBlue: #4453A6;
-$lightBlue: #2ABBEF;
-$orange: #EDCA42;
-$gray: #D4D4D4;
-$purple: rgb(190, 146, 211);
 
 *, h1, h2, h3, h4, h5, h6, p, span, div{
   box-sizing: border-box;
