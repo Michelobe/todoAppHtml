@@ -1,185 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="utf-8" />
+    <title>Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/main.css" />
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://kit.fontawesome.com/54e60d0643.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Megrim&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
-    <div id = "allTasks">
-      <section class = "header">
-        <div class = "top">
-          <div class = "logo">
+    <div id="allTasks">
+      <section class="header">
+        <div class="top">
+          <div class="logo">
             Taskmanager
           </div>
-          <div class = "taskTotal">
-            <div class = "task">
-              <span class = "number">12</span> Tasks
-            </div>
-            <div class = "task">
-              <span class = "number">5</span> Completed
-            </div>
+          <div class="taskTotal">
+            <div class="task"><span class="number">12</span> Tasks</div>
+            <div class="task"><span class="number">5</span> Completed</div>
           </div>
-          <div class = "addCircle">
-              <i class="fas fa-plus-circle"></i>
+          <div class="addCircle">
+            <i class="fas fa-plus-circle"></i>
           </div>
         </div>
       </section>
 
-      <section class = "contentArea">
-        <div class = "container">
-          <div class = "tasksContainer">
-            <div class = "taskBox">
-              <div class = "title">
+      <section class="contentArea">
+        <div class="container">
+          <div class="tasksContainer">
+            <div class="taskBox">
+              <div class="title">
                 Clean Room
               </div>
-              <div class = "date">
+              <div class="date">
                 Created: December 3rd, 2019
               </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
+              <div class="checkBox">
+                <i class="fas fa-check"></i>
               </div>
             </div>
-            <div class = "taskBox">
-              <div class = "title">
+            <div class="taskBox">
+              <div class="title">
                 Clean Room
               </div>
-              <div class = "date">
+              <div class="date">
                 Created: December 3rd, 2019
               </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
+              <div class="checkBox">
+                <i class="fas fa-check"></i>
               </div>
             </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
-            <div class = "taskBox">
-              <div class = "title">
-                Clean Room
-              </div>
-              <div class = "date">
-                Created: December 3rd, 2019
-              </div>
-              <div class = "checkBox">
-                  <i class="fas fa-check"></i>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
 
-      <section class = "taskForm">
-        <div class = "closeBtn">
-            <i class="fas fa-times"></i>
+      <section class="taskForm">
+        <div class="closeBtn">
+          <i class="fas fa-times"></i>
         </div>
         <form>
           <h3>Add a task</h3>
-          <div class = "formGroup">
-              <label for = "title">Title:</label>
-              <input type = "text" name = "title" />
+          <div class="formGroup">
+            <label for="title">Title:</label>
+            <input type="text" name="title" />
           </div>
-          <div class = "formGroup">
-              <label for = "title">Category:</label>
-              <input type = "text" name = "title" />
+          <div class="formGroup">
+            <label for="title">Category:</label>
+            <input type="text" name="title" />
           </div>
-          <div class = "formGroup">
-              <label for = "title">Notes:</label>
-              <textarea name = "notes"></textarea>
+          <div class="formGroup">
+            <label for="title">Notes:</label>
+            <textarea name="notes"></textarea>
           </div>
-          <div class = "formGroup">
-            <button type = "submit">Add new task</button>
+          <div class="formGroup">
+            <button type="submit">Add new task</button>
           </div>
         </form>
       </section>
     </div>
 
     <script
-    src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
-    <script type = "text/javascript">
-      $(document).ready(function(){
-        $('.addCircle').on('click', function(){
-          $('.taskForm').addClass('active');
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".addCircle").on("click", function() {
+          $(".taskForm").addClass("active");
         });
       });
-      $(document).ready(function(){
-        $('.closeBtn').on('click', function(){
-          $('.taskForm').removeClass('active');
+      $(document).ready(function() {
+        $(".closeBtn").on("click", function() {
+          $(".taskForm").removeClass("active");
         });
       });
     </script>
   </body>
-
 </html>

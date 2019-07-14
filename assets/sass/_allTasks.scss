@@ -1,35 +1,35 @@
-
 @import "reset";
 @import "variables";
 
-
-#allTasks{
-  height: 100vh;
+#allTasks {
+  height: 100%;
   overflow: auto;
-  .header{
-    background: url("https://www.roadaffair.com/wp-content/uploads/2017/12/bali-indonesia-shutterstock_631736717.jpg") center center;
+  .header {
+    position: relative;
+    background: url("https://www.roadaffair.com/wp-content/uploads/2017/12/bali-indonesia-shutterstock_631736717.jpg")
+      center center;
     background-repeat: no-repeat;
     width: 100%;
     // height: 300px;
     background-size: cover;
     color: white;
-    .top{
-      background: rgba(68,83,166,.7);
+    .top {
+      background: rgba(68, 83, 166, 0.7);
       padding: 50px 15px;
       text-align: right;
     }
-    .logo{
-      font-family: 'Megrim', cursive;
+    .logo {
+      font-family: "Megrim", cursive;
       font-size: 36px;
       float: left;
     }
-    .taskTotal{
+    .taskTotal {
       position: relative;
       top: -20px;
-      .task{
+      .task {
         display: inline-block;
         margin: 0 5px 0 0;
-        .number{
+        .number {
           color: rgb(190, 146, 211);
           font-weight: 100;
           font-size: 60px;
@@ -39,7 +39,7 @@
         }
       }
     }
-    .addCircle{
+    .addCircle {
       background: black;
       border-radius: 50%;
       position: absolute;
@@ -47,33 +47,33 @@
       top: 131px;
       padding: 10px;
       cursor: pointer;
-      .fas{
-        color: #2ABBEF;
+      .fas {
+        color: #2abbef;
         font-size: 37px;
       }
     }
   }
-  .contentArea{
-    color: red;
+  .contentArea {
+    // width: 100vw;
     overflow: auto;
-    .tasksContainer{
+    .tasksContainer {
       margin: 40px 0;
-      .taskBox{
+      .taskBox {
         padding: 20px;
-        border-bottom: 2px solid #E6E5E3;
+        border-bottom: 2px solid #e6e5e3;
         margin: 0 0 20px 0;
         background: white;
         position: relative;
-        .title{
+        .title {
           color: black;
           font-size: 24px;
           margin: 0 0 6px 0;
         }
-        .date{
+        .date {
           color: #afafaf;
           font-size: 14px;
         }
-        .checkBox{
+        .checkBox {
           padding: 3px;
           border-radius: 10px;
           border: 3px solid $darkBlue;
@@ -88,7 +88,7 @@
     }
   }
   transition-timing-function: ease-in-out;
-  .taskForm{
+  .taskForm {
     background: $darkBlue;
     position: absolute;
     z-index: 100;
@@ -96,61 +96,63 @@
     bottom: 0;
     width: 100%;
     color: white;
-    padding: 50px 0;
+    padding: 25px 0;
     transform: translate(0, 100%);
-    transition: all .6s ease-in-out;
-    &.active{
+    transition: all 0.6s ease-in-out;
+    overflow: auto;
+    &.active {
       transform: translate(0, 0);
     }
-    .closeBtn{
+    .closeBtn {
       position: absolute;
       top: 35px;
       right: 35px;
       padding: 15px;
       cursor: pointer;
-      .fas{
+      .fas {
         font-size: 36px;
       }
     }
-    form{
+    form {
       display: block;
       max-width: 500px;
       margin: 0 auto;
       padding: 15px;
     }
-    h3{
+    h3 {
       margin: 50px 0;
       font-size: 36px;
       text-align: center;
     }
-    .formGroup{
+    .formGroup {
       margin-bottom: 20px;
     }
-    label{
-      font-family: 'Roboto', cursive;
+    label {
+      font-family: "Roboto", cursive;
       font-weight: 300;
       font-size: 24px;
       display: block;
       text-transform: capitalize;
       margin: 0 0 15px 0;
     }
-    input[type="text"], textarea{
+    input[type="text"],
+    textarea {
       width: 100%;
-      background: rgba(255,255,255, .1);
+      background: rgba(255, 255, 255, 0.1);
       border: none;
-      border-bottom: 1px solid rgba(255,255,255, .7);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
       font-weight: 300;
       font-size: 36px;
       color: white;
-      &:focus{
-        border:none;
+      &:focus {
+        border: none;
         outline: none;
       }
     }
-    textarea{
+    textarea {
       height: 250px;
     }
-    button{
+    button {
       background: $lightBlue;
       border: none;
       width: 100%;
@@ -161,10 +163,64 @@
     }
   }
 }
-  
-.container{
+
+.container {
   display: block;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+//LAPTOP====================================
+@media screen and (min-width: 1200px) {
+  #allTasks {
+  }
+}
+//TABLETS====================================
+@media screen and (max-width: 1199px) {
+  #allTasks {
+  }
+}
+//PHONES====================================
+@media screen and (max-width: 767px) {
+  #allTasks {
+    .header {
+      .addCircle {
+        right: 25px;
+        top: 151px;
+      }
+      .top{
+        .taskTotal {
+          .task {
+            display: block;
+            .number {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//EXTRA SMALL PHONES=================================
+@media screen and (max-width: 337px) {
+  #allTasks {
+    .header {
+      .top{
+        .taskTotal {
+          .task {
+            display: inline-block;
+            padding: 10px;
+            .number {
+              font-size: 40px;
+            }
+          }
+        }
+        .addCircle {
+          right: 25px;
+          top: 166px;
+        }
+      }
+    }
+  }
 }
