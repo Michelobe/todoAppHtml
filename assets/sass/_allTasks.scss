@@ -2,12 +2,10 @@
 @import "reset";
 @import "variables";
 
-html{
-  overflow: hidden;
-}
 
 #allTasks{
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: auto;
   .header{
     background: url("https://www.roadaffair.com/wp-content/uploads/2017/12/bali-indonesia-shutterstock_631736717.jpg") center center;
     background-repeat: no-repeat;
@@ -57,7 +55,7 @@ html{
   }
   .contentArea{
     color: red;
-    width: 100%;
+    overflow: auto;
     .tasksContainer{
       margin: 40px 0;
       .taskBox{
@@ -168,4 +166,5 @@ html{
   display: block;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
